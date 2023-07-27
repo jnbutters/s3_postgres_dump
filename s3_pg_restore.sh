@@ -37,7 +37,7 @@ if [ "$DB_EXISTS" = "1" ]
 then
     echo "Database $db already exists, skipping creation"
     # Restore database
-    pg_restore -h $PG_HOST -U $PG_USER -p $PG_PORT -d $db -Fc -v --clean /tmp/$DUMP 1> ./logs/${db}_restore_${NOW}.log 2>&1
+    pg_restore -h $PG_HOST -U $PG_USER -p $PG_PORT -d $db -Fc -v --clean /tmp/$DUMP
 fi
 
 # Remove backup file
