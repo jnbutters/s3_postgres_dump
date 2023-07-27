@@ -1,0 +1,6 @@
+# Secret ID
+SEC_ID="pg_snapshot/edbstore"
+
+# Bucket and path within S3
+S3_PATH="are-testvend-postgres-dumps/edbstore"
+
